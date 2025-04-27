@@ -1,0 +1,10 @@
+# Node
+node_modules/
+dist/
+build/
+
+# Ambiente
+.env
+
+
+
