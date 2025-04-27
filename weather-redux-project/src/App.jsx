@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <p style={{color:"cornflowerblue" }}  > The API source: " api.openweathermap.org/data/2.5/weather?q=t,AR& " </p>
+      <p style={{color:"lightcoral" }}  > The API source: " api.openweathermap.org/data/2.5/weather?q=t,AR& " </p>
       <br></br>
       <TheProvider>
         <UserConsumer></UserConsumer>
