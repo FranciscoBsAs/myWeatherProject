@@ -1,0 +1,56 @@
+/* WeatherConsumer.css */
+
+.weatherContainer {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.5s ease;
+  }
+  
+  .hotWeather {
+    background-color: #ffcccb; /* rojo clarito (calor) */
+    /*
+    color: firebrick ;
+    */
+  }
+  
+  .coldWeather {
+    background-color: #add8e6; /* celeste clarito (frío) */
+    /*
+    color: darkgreen 
+    */
+  }
+  
+  .weatherTitle {
+    
+    font-weight: bold;
+    color: lavenderblush;
+  }
+  .weatherLocation{
+    color: darkblue
+  }
+
+  .cityTitleContainer {
+    display: flex;          /* Hace que el contenido sea horizontal */
+    align-items: center;   
+    justify-content: center; 
+    gap: 10px;              
+  }
+  
+  .weatherInfo {
+    
+    margin-top: 10px;
+    color: wheat; 
+  }
+
+
+.hotWeather .weatherTitle,
+.hotWeather .weatherInfo {
+  color: firebrick;
+}
+
+.coldWeather .weatherTitle,
+.coldWeather .weatherInfo {
+  color: darkgreen;
+}
+  
