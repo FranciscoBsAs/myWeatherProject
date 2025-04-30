@@ -34,7 +34,7 @@ appWeather.use( corsToServer() )
 const myApiID = process.env.VITE_WEATHER_API_ID ;
 
 
-appWeather.get( "/myWeatherAPIFinal",
+appWeather.get( "/myWeatherExpressAPIFinal",
     async ( req, resp ) => {
         try {
 
@@ -75,6 +75,6 @@ appWeather.get( "/myWeatherAPIFinal",
 
  
 appWeather.listen( port, () => {
-    console.log( `\n API escuchando en http://localhost:${port}/myWeatherAPIFinal` );
+    console.log( `\n API escuchando en http://localhost:${port}/myWeatherExpressAPIFinal` );
 } )
 

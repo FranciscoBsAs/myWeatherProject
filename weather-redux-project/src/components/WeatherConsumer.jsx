@@ -27,7 +27,7 @@ function WeatherConsumer () {
                 try {
                     //console.log(port)
                     console.log("Desde WeatherConsumer, cityActual:", cityActual)
-                    const response = await fetch( `https://myweatherapifromrender.onrender.com/myWeatherAPIFinal?city=${ encodeURIComponent(cityActual) }` )   //http://localhost:${port}/myWeatherAPI
+                    const response = await fetch( `https://myweatherapifromrender.onrender.com/myWeatherExpressAPIFinal?city=${ encodeURIComponent(cityActual) }` )   //http://localhost:${port}/myWeatherAPI
 
                     console.log(response)
 
