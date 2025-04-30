@@ -20,15 +20,16 @@ require('dotenv').config()
 
 //module.exports = { port }
 
-
+/*
 appWeather.use( corsToServer(
     {
         origin: "https://myweatherarg.vercel.app/"
     }
 ) )
+*/
 
 
-//appWeather.use( corsToServer() )
+appWeather.use( corsToServer() )
 
 const myApiID = process.env.VITE_WEATHER_API_ID ;
 
