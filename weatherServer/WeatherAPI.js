@@ -25,6 +25,10 @@ appWeather.use( corsToServer() )
 
 const myApiID = process.env.VITE_WEATHER_API_ID ;
 
+
+appWeather.use( cors() )
+
+
 appWeather.get( "/myWeatherAPIFinal",
     async ( req, resp ) => {
         try {
