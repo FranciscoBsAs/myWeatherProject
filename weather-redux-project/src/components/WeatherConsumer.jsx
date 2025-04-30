@@ -82,6 +82,9 @@ function WeatherConsumer () {
             <h3 className="weatherInfo" >
                 Humidity: { weatherActual?.Humidity }
             </h3>
+            <h3 className="weatherInfo" >
+                Wind Speed: { weatherActual?.WindSpeed } m/s
+            </h3>
             <h4 className="weatherInfo" >
                 Hour: { weatherActual?.TimeHour } hs
             </h4>

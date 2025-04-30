@@ -18,15 +18,6 @@ const port = 600
 
 require('dotenv').config()
 
-//module.exports = { port }
-
-/*
-appWeather.use( corsToServer(
-    {
-        origin: "https://myweatherarg.vercel.app/"
-    }
-) )
-*/
 
 
 appWeather.use( corsToServer() )
@@ -50,11 +41,14 @@ appWeather.get( "/myWeatherExpressAPIFinal",
 
             const temperature = data.main.temp;
             const humidity = data.main.humidity;
+            const wind_speed = data.wind.speed ;
 
             const WeatherObject = {
                 Temperature: temperature,
                 Humidity: humidity,
+                WindSpeed: wind_speed,
                 TimeHour: new Date().getHours() + ":" + new Date().getMinutes().toString().padStart( 2, '0' ),
+
 
             }
 
