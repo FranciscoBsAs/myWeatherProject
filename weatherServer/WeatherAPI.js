@@ -47,7 +47,7 @@ appWeather.get( "/myWeatherExpressAPIFinal",
                 Temperature: temperature,
                 Humidity: humidity,
                 WindSpeed: wind_speed,
-                TimeHour: new Date().getHours() + ":" + new Date().getMinutes().toString().padStart( 2, '0' ),
+                TimeHour: new Date().getHours() + ":" + new Date().getMinutes(),
 
 
             }

@@ -2,6 +2,9 @@ import { createSlice } from "@reduxjs/toolkit"
 
 const initialStateOfWeather = {
     city: null,
+    windUnit: 'm/s',
+    temperatureUnit: '°C',
+    isLoading: false,
 }
 
 const useSlice = createSlice(
@@ -20,13 +23,25 @@ const useSlice = createSlice(
 
             clearCityLocker: ( state ) => {
                 state.city = null
-            }
+            },
 
+            setWindUnit: ( state, operation ) => {
+                state.windUnit = operation.payload
+            },
+
+            setTemperatureUnitReducer: ( state, operation ) => {
+                state.temperatureUnit = operation.payload
+            },
+
+            setIsLoading: ( state, operation ) => {
+                state.isLoading = operation.payload
+            }
+            
         }
     
     }
 )
 
-export const { setUserCity, clearCityLocker } = useSlice.actions
+export const { setUserCity, clearCityLocker, setWindUnit, setTemperatureUnitReducer, setIsLoading } = useSlice.actions
 
 export default useSlice.reducer
