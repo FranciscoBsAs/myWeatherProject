@@ -13,9 +13,8 @@ import ClipLoader from "react-spinners/ClipLoader"
 import WindConsumer from "./WindConsumer.jsx";
 
 import { useTempUnitChosenHook, ConvertTemperature } from "./TempUnitLogicConvert.jsx";
-import { setIsLoading } from "../store/weatherReducer/MainWeather.jsx";
 
-//import { port } from "../../../weatherServer/weatherAPI.js";
+import { setIsLoading } from "../store/weatherReducer/MainWeather.jsx";
 
 
 function WeatherConsumer () {
@@ -38,11 +37,11 @@ function WeatherConsumer () {
                 return
             }
 
-            theLoadDispatch( setIsLoading( true ) ) // is true to it's has to load
+            theLoadDispatch( setIsLoading( true ) )     	// is true to it's has to load
             
             GetWeatherFromRenderServer( cityActual )
                 
-                .then( ( data ) => {        // .then & .catch are methods of the async function GetWeatherFromRenderServer()
+                .then( ( data ) => {                        // .then, .catch & .finally are methods of the async function GetWeatherFromRenderServer()
 
                     setWeatherActual( data ) ;
                     setErrorFromAPI(null)
@@ -106,22 +105,13 @@ function WeatherConsumer () {
             <h3 className="weatherInfo" >
                 Humidity: { weatherActual?.Humidity }
             </h3>
-            {/*
-            <h3 className="weatherInfo" >
-                Wind speed: { weatherActual?.WindSpeed } m/s
-            </h3>
-            */}
+
             <h3 className="weatherInfo">
                 Wind speed:
                     { weatherActual?.WindSpeed !== undefined &&
                         < WindConsumer windSpeedDefault={ weatherActual.WindSpeed } > </WindConsumer>
                     }
             </h3>
-
-
-            <h4 className="weatherInfo" >
-                Horary Server from America: { weatherActual?.TimeHour } hs
-            </h4>
         </div>
     )
 
