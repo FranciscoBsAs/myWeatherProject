@@ -10,7 +10,10 @@ import { useState } from "react";
 
 import { useTempUnitChosenHook } from "./TempUnitLogicConvert.jsx";
 
+import ClearCityLockerButton from "./ClearCityLockerButton.jsx";
+
 import "./WeatherConsumer.css"
+
 
 
 function UserConsumer () {
@@ -61,6 +64,9 @@ function UserConsumer () {
              <button onClick={ handleClickBotton } className="sendButton" >
                 Check the weather
              </button>
+             &nbsp; &nbsp;
+             <ClearCityLockerButton/>
+
              <br/>
              <select value={tempUnitChosen} onChange={ handleTemperatureUnitChange } >
                 <option value="°C"> Celsius (°C) </option>

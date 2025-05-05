@@ -34,6 +34,7 @@ function WeatherConsumer () {
         useEffect( () => {
 
             if( !cityActual ) {
+                setWeatherActual(null)
                 return
             }
 
@@ -45,7 +46,7 @@ function WeatherConsumer () {
 
                     setWeatherActual( data ) ;
                     setErrorFromAPI(null)
-                    console.log("Desde WeatherConsumer, cityActual:", cityActual, data)
+                    console.log("Desde WeatherConsumer, actual city:", cityActual, data)
 
                 } )
 

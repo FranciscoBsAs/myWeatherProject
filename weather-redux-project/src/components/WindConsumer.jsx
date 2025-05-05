@@ -11,7 +11,7 @@ function WindConsumer ( { windSpeedDefault } ) {
 
     const theWindyDispatch = useDispatch()  //es un hook windyDispatch = dispatch ventoso
 
-    // no se usa useState porque es una operacion global, por eso se usa con hooks redux 
+    // no se usa useState porque es una operacion global, por eso se usa con hooks Redux 
 
     const windUnit = useSelector( SelectWindUnit )
     
