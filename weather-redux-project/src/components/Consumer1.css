@@ -12,41 +12,40 @@
     color: black
   }
   
-  .sendButton {
-    padding: 10px 20px;
-    background-color: darkolivegreen; /* verde original */
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.4s ease; /* animación suave */
-  }
-  .sendButton:hover {
-    background-color: yellow  ; /* naranja intenso en hover */
-    color: darkblue ;            /* cambia color del texto */
-    transform: scale(1.05);    /* agranda un poquito */
-    box-shadow: 0 0 10px teal; /* un poco de glow */
+.sendButton {
+  padding: 10px 20px;
+  background-color: darkolivegreen; /* verde original */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease ; /* animación suave */
+
+  &:hover{
+    background-color: yellow ;
+    color: darkblue ;
+    transform: scale( 1.05 ) ;    /* el btn se agranda un 5%.  */
+    box-shadow: 0 0 10px teal;
   }
 
-  .clearButton{
-    padding: 8px 16px;
-    background-color: bisque ;
-    color: darkolivegreen ;
-    font-weight: bold ;
-    font-size: 14px ;
-    border: none;
-    border-radius: 8px ;
-    cursor: pointer ;
-    transition : all 0,5s ease;
+}
 
-    &:hover{
-      background-color: orange ;
-      color: blue ;
-      transform: scale( 1.05 ) ;
-      box-shadow: 0 0 10px teal
-    }
-
+.clearButton{
+  padding: 8px 16px;
+  background-color: bisque ;
+  color: darkolivegreen ;
+  font-weight: bold ;
+  font-size: 14px ;
+  border: none;
+  border-radius: 8px ;
+  cursor: pointer ;
+  transition : all 0,5s ease;
+  &:hover{
+    background-color: orange ;
+    color: blue ;
+    transform: scale( 1.05 ) ;
+    box-shadow: 0 0 10px teal
   }
-  
+}

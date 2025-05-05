@@ -70,8 +70,8 @@ function WeatherConsumer () {
 
         if( weatherActual?.Temperature !== undefined ) {
             weatherBackgroundColor = ( weatherActual.Temperature > 20 )
-                ? ( "hotWeather" )
-                : ( "coldWeather" ) 
+                ? ( 'hotWeather' )
+                : ( 'coldWeather' ) 
         }
     
 
