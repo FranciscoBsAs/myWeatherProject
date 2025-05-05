@@ -17,7 +17,7 @@ function ClearCityLockerButton () {
     
 
     return(
-        <button onClick={ handleClearLocker } className="sendButton" >
+        <button onClick={ handleClearLocker } className="clearButton" >
             Clear Locker
         </button>
     )
