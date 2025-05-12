@@ -33,7 +33,7 @@ function WindConsumer ( { windSpeedDefault } ) {
 
         <div>
             
-                { windSpeed } * {windUnit}
+                { windSpeed } {windUnit} {" "}
 
             <select value={ windUnit } onChange={handleChange} >
                 

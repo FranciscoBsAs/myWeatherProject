@@ -92,8 +92,11 @@ function WeatherConsumer () {
                 </h2>
 
             </div>
-            <h3 className="weatherInfo"  >
-                Temperature: { } 
+            <h2  >
+                <span className="labelField" >Temperature: { }  </span>
+
+                <span className="weatherInfo"  >
+                
                     { weatherActual?.Temperature !== undefined 
                         &&
                     ConvertTemperature( weatherActual.Temperature, tempUnitAlreadyChosen )
@@ -102,17 +105,23 @@ function WeatherConsumer () {
                     { tempUnitAlreadyChosen }
 
                     { weatherIcon }
-            </h3>
-            <h3 className="weatherInfo" >
-                Humidity: { weatherActual?.Humidity }
-            </h3>
+                </span>
+            </h2>
+            <h2  >
+                <span className="labelField" >Humidity: </span>
 
-            <h3 className="weatherInfo">
-                Wind speed:
+                <span className="weatherInfo" >{ weatherActual?.Humidity }% </span>
+
+            </h2>
+
+            <h2 className=" windSpeedContainer " >
+                <span className="labelField" >Wind speed: </span>
+                <span className="weatherInfo"> { }
                     { weatherActual?.WindSpeed !== undefined &&
-                        < WindConsumer windSpeedDefault={ weatherActual.WindSpeed } > </WindConsumer>
+                        < WindConsumer windSpeedDefault={ weatherActual.WindSpeed }/>
                     }
-            </h3>
+                </span>
+            </h2>
         </div>
     )
 
