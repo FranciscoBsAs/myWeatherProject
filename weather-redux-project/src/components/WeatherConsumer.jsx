@@ -14,7 +14,7 @@ import WindConsumer from "./WindConsumer.jsx";
 
 import { useTempUnitChosenHook, ConvertTemperature } from "./TempUnitLogicConvert.jsx";
 
-import { setIsLoading } from "../store/weatherReducer/MainWeather.jsx";
+import { setIsLoading } from "../store/weatherReducer/MainWeatherReducer.jsx";
 
 
 function WeatherConsumer () {
@@ -95,7 +95,7 @@ function WeatherConsumer () {
             <h2  >
                 <span className="labelField" >Temperature: { }  </span>
 
-                <span className="weatherInfo"  >
+                <span className="weatherInfo">
                 
                     { weatherActual?.Temperature !== undefined 
                         &&
@@ -107,15 +107,13 @@ function WeatherConsumer () {
                     { weatherIcon }
                 </span>
             </h2>
-            <h2  >
-                <span className="labelField" >Humidity: </span>
-
+            <h2>
+                <span className="labelField" > Humidity: </span>
                 <span className="weatherInfo" >{ weatherActual?.Humidity }% </span>
-
             </h2>
 
-            <h2 className=" windSpeedContainer " >
-                <span className="labelField" >Wind speed: </span>
+            <h2 className=" windSpeedContainer ">
+                <span className="labelField" > Wind speed: </span>
                 <span className="weatherInfo"> { }
                     { weatherActual?.WindSpeed !== undefined &&
                         < WindConsumer windSpeedDefault={ weatherActual.WindSpeed }/>

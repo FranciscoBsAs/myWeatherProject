@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "../store/MainStore.jsx";
 
 import { SelectWindUnit } from "../store/weatherReducer/SelectorsWeather.jsx";
 
-import { setWindUnit } from "../store/weatherReducer/MainWeather";
+import { setWindUnit } from "../store/weatherReducer/MainWeatherReducer.jsx";
 
 import "./WeatherConsumer.css"
 
