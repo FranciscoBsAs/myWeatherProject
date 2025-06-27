@@ -2,7 +2,8 @@ import "./Consumer1.css"
 
 import { useDispatch, useSelector } from "../store/MainStore.jsx";    //el hook useDispatch permite enviar acciones al store de Redux (es una función que devuelve dispatch).
 
-import { setTemperatureUnitReducer, setUserCity } from "../store/weatherReducer/MainWeather.jsx";
+
+import { setTemperatureUnitReducer, setUserCity } from "../store/weatherReducer/MainWeatherReducer.jsx";
 
 import { SelectTemperature } from "../store/weatherReducer/SelectorsWeather.jsx";
 

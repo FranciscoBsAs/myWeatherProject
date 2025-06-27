@@ -1,6 +1,6 @@
 import { useDispatch } from "../store/MainStore.jsx";
 
-import { clearCityLocker } from "../store/weatherReducer/MainWeather";
+import { clearCityLocker } from "../store/weatherReducer/MainWeatherReducer.jsx";
 
 import "./Consumer1.css"
 
